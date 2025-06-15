@@ -13,7 +13,7 @@
 }
 
 #mainSection {
-    background-image: url("/images/places/ocean.jpg");
+    background-image: url("images/places/ocean.jpg");
     background-size: cover;
     height: 47rem;
 }

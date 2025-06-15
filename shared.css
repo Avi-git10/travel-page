@@ -4,9 +4,6 @@
     font-family: "Josefin Sans", sans-serif;
 }
 
-* {
-  outline: 1px solid rgba(255, 0, 0, 0.2);
-}
 
 @import url("/styles.css");
 
