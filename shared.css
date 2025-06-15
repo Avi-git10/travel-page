@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+@import url("/styles.css");
+
+#navbar {
+    width: 95%;
+    position: fixed;
+    list-style: none;
+    padding: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#navbar li a h2 {
+    color: var(--bgLevel2);
+    font-weight: 400;
+    font-size: 3.5rem;
+    font-style: italic;
+    font-family: "Molle", cursive;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+#navbarLeft {
+    width: 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    font-size: 1.2rem;
+    color: var(--bgLevel2);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--bgLevel1);
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    width: 100vw;
+}
+
+footer img{
+    margin:10px 3.5rem 10px 3.5rem;
+    width: 4rem;
+}
+
