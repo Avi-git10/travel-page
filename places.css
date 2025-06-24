@@ -131,3 +131,7 @@ body {
     margin: 10px 10px 10px 0;
     text-align: left;
 }
+
+#hamburger span {
+    background-color: var(--bgLevel4);
+}

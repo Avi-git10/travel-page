@@ -21,7 +21,7 @@
 #navbar li a h2 {
     color: var(--bgLevel2);
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-style: italic;
     font-family: "Molle", cursive;
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.7);
@@ -32,6 +32,75 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#hamburger {
+    display: none;
+    flex-direction: column;
+}
+
+#hamburger span {
+    width: 40px;
+    height: 3px;
+    margin: 4px;
+    background-color: var(--bgLevel2);
+}
+
+@media (max-width: 850px) {
+    #hamburger {
+        display: flex;
+    }
+
+    #hamburger span {
+        transition: 0.3s ease;
+    }
+
+    .lapFirstNav {
+        display: none;
+    }
+
+    #hamburger.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .lapFirstNavBg {
+        color: white;
+        height: 100vh;
+        background-color: rgba(84, 110, 100, 0.497);
+        backdrop-filter: blur(0.1px);
+    }
+
+    .lapFirstOpen {
+        margin: auto;
+        text-align: center;
+        display: block;
+        flex-direction: column;
+    }
+
+    #navbarLeft {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        gap: 1rem;
+        border-radius: 5px;
+        position: fixed;
+        left: 2rem;
+        top: 7rem;
+    }
+
+    #navbarLeft a {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
 }
 
 a {
@@ -49,7 +118,8 @@ footer {
     display: flex;
     justify-content: center;
     height: 15%;
-    width: 100vw;
+    width: 100%;
+    /* overflow: hidden; */
 }
 
 footer img{
